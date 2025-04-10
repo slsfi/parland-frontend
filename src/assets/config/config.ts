@@ -21,8 +21,8 @@ export const config: Config = {
       enabled: true,
       image: {
         sv: {
-          altText: "Svartvitt foto: En leende Henry Parland i Kaunas 1929.",
-          URL: "assets/images/slsa945_3_HP_Kaunas_1929_Sonder.jpg"
+          altText: "Svartvitt foto av en ung man i tweed-kostym som sitter utomhus och ler mot kameran. Han har kort, bakåtkammat hår och bär slips. Bakgrunden visar otydligt några byggnader.",
+          URL: "assets/images/home-page/slsa945_3_HP_Kaunas_1929_Sonder.jpg"
         }
       }
     },
@@ -144,15 +144,15 @@ export const config: Config = {
     home: {
       bannerImage: {
         altTexts: {
-          sv: "Svartvitt foto: En leende Henry Parland i Kaunas 1929."
+          sv: "Svartvitt foto av en ung man i tweed-kostym som sitter utomhus och ler mot kameran. Han har kort, bakåtkammat hår och bär slips. Bakgrunden visar otydligt några byggnader."
         },
         intrinsicSize: {
-          height: null,
-          width: null
+          height: 756,
+          width: 520
         },
         orientationPortrait: true,
         alternateSources: [],
-        URL: "assets/images/slsa945_3_HP_Kaunas_1929_Sonder.jpg"
+        URL: "assets/images/home-page/slsa945_3_HP_Kaunas_1929_Sonder.jpg"
       },
       portraitOrientationSettings: {
         imagePlacement: {
@@ -161,7 +161,7 @@ export const config: Config = {
         },
         siteTitleOnImageOnSmallScreens: false
       },
-      showContentGrid: false,
+      showContentGrid: true,
       showFooter: true,
       showSearchbar: false
     },
@@ -215,10 +215,10 @@ export const config: Config = {
         emendations: true,
         normalisations: true,
         workInfo: false,
-        abbreviations: true,
+        abbreviations: false,
         paragraphNumbering: true,
         pageBreakOriginal: true,
-        pageBreakEdition: true
+        pageBreakEdition: false
       },
       viewTypes: {
         showAll: true,

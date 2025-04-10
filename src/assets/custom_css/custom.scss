@@ -200,7 +200,7 @@
   --primary-color: #95caa0;
   --primary-color-rgb: 149, 202, 160;
   --primary-color-contrast:           #000;
-  --secondary-color:                      #e6e6e6;
+  --secondary-color:                    #d5d5d5; // #e6e6e6;
   --main-background-color:                #f2f2f2;
   --route-loading-progress-bar-color:     rgba(0, 0, 0, 0.2);
   --default-link-color: #A35290;
@@ -217,9 +217,8 @@
 
 ion-app[class][class] {
   --top-menu-button-filter:                      none;
-
   --side-menu-hover-color:                       var(--custom-action-color);
-  --side-menu-collection-title-background-color: #cecece;
+  --side-menu-collection-title-background-color: #d0d6e4; // #cecece;
   --side-menu-selected-background-color:         #CAE2CE;
 }
 
@@ -257,6 +256,12 @@ page-home {
 
   ul {
     line-height: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  ion-content.collection-ion-content {
+    --background: fixed var(--main-background-color) url('/assets/images/collection-pages/oscar-parland-repeat-bg.jpg');
   }
 }
 
