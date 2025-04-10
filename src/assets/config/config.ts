@@ -2,15 +2,14 @@ type Config = { [key: string]: any }
 
 export const config: Config = {
   app: {
-    siteURLOrigin: "https://topelius.sls.fi",
-    projectNameDB: "topelius",
-    projectId: 10,
-    backendBaseURL: "https://api.sls.fi/digitaledition",
+    siteURLOrigin: "https://granska-parland.sls.fi",
+    projectNameDB: "parland",
+    projectId: 63,
+    backendBaseURL: "https://granska-api.sls.fi/digitaledition",
     alternateFacsimileBaseURL: "",
     i18n: {
       languages: [
-        { code: "sv", label: "Svenska", region: "FI" },
-        { code: "fi", label: "Suomi", region: "FI" }
+        { code: "sv", label: "Svenska", region: "FI" }
       ],
       defaultLanguage: "sv",
       multilingualCollectionTableOfContents: false,
@@ -22,12 +21,8 @@ export const config: Config = {
       enabled: true,
       image: {
         sv: {
-          altText: "alt-text",
-          URL: "assets/images/home-page-banner.jpg"
-        },
-        fi: {
-          altText: "alt-teksti",
-          URL: "assets/images/home-page-banner.jpg"
+          altText: "Svartvitt foto: En leende Henry Parland i Kaunas 1929.",
+          URL: "assets/images/slsa945_3_HP_Kaunas_1929_Sonder.jpg"
         }
       }
     },
@@ -41,19 +36,10 @@ export const config: Config = {
   },
   collections: {
     addTEIClassNames: true,
-    replaceImageAssetsPaths: true,
+    replaceImageAssetsPaths: false,
     enableLegacyIDs: true,
     enableMathJax: false,
-    firstTextItem: {
-      216: "216_20280", 219: "219_19443", 220: "220_20122",
-      218: "218_20230_ch2", 210: "210_20548_ch1", 208: "208_18466_ch4",
-      207: "207_18464_ch1", 214: "214_20240_ch1", 203: "203_20217_ch1",
-      213: "213_18465_ch1", 202: "202_18467_ch1", 199: "199_18284",
-      221: "221_21422", 206: "206_20212_ch1", 201: "201_18471",
-      211: "211_20128", 200: "200_19870", 205: "205_20227_ch1",
-      215: "215_20568", 217: "217_20559_ch1", 204: "204_20322",
-      212: "212_20323", 209: "209_20479"
-    },
+    firstTextItem: {},
     frontMatterPages: {
       cover: true,
       title: true,
@@ -61,70 +47,23 @@ export const config: Config = {
       introduction: true
     },
     highlightSearchMatches: true,
-    inlineIllustrations: [206],
-    mediaCollectionMappings: { 214: 44, 206: 19, 218: 19 },
+    inlineIllustrations: [],
+    mediaCollectionMappings: {},
     order: [
-      [216, 219, 220, 218, 210, 208, 207, 214, 203, 213,
-        202, 199, 221, 206, 201, 211, 200, 205, 215, 217,
-        204, 212, 209]
+      [2575, 2577, 2579, 2580, 2578]
     ]
   },
-  ebooks: [
-    {
-      title: "Bröd och bot",
-      filename: "norrback-brod-och-bot.epub",
-      externalFileURL: "",
-      coverURL: "",
-      downloadOptions: [
-        {
-          url: "https://www.sls.fi/sv/utgivning/historiska-recept",
-          label: ""
-        }
-      ]
-    },
-    {
-      title: "Marriage Conditions in a Palestinian Village I (epub)",
-      filename: "marriage-conditions-1.epub",
-      externalFileURL: "https://api.sls.fi/digitaledition/granqvist/files/30/epub/30_11672_Marriage_Conditions_1.epub/",
-      coverURL: "",
-      downloadOptions: [
-        {
-          url: "https://api.sls.fi/digitaledition/granqvist/files/30/epub/30_11672_Marriage_Conditions_1.epub/",
-          label: "EPUB"
-        },
-        {
-          url: "https://api.sls.fi/digitaledition/granqvist/files/30/pdf/30_11672_Marriage_Conditions_1.pdf/",
-          label: "PDF"
-        }
-      ]
-    },
-    {
-      title: "Marriage Conditions in a Palestinian Village I (pdf)",
-      filename: "marriage-conditions-1.pdf",
-      externalFileURL: "https://api.sls.fi/digitaledition/granqvist/files/30/pdf/30_11672_Marriage_Conditions_1.pdf/",
-      coverURL: "",
-      downloadOptions: [
-        {
-          url: "https://api.sls.fi/digitaledition/granqvist/files/30/epub/30_11672_Marriage_Conditions_1.epub/",
-          label: "EPUB"
-        },
-        {
-          url: "https://api.sls.fi/digitaledition/granqvist/files/30/pdf/30_11672_Marriage_Conditions_1.pdf/",
-          label: "PDF"
-        }
-      ]
-    }
-  ],
+  ebooks: [],
   page: {
     about: {
-      initialPageNode: "01-01"
+      initialPageNode: "01"
     },
     elasticSearch: {
       enableFilters: true,
       enableSortOptions: true,
       filterGroupsOpenByDefault: ["Years", "Type", "Genre", "Collection"],
       hitsPerPage: 15,
-      indices: ["topelius"],
+      indices: ["parland"],
       openReadingTextWithComments: false,
       textHighlightFragmentSize: 150,
       textHighlightType: "fvh",
@@ -199,14 +138,13 @@ export const config: Config = {
       }
     },
     foreword: {
-      showURNButton: true,
+      showURNButton: false,
       showViewOptionsButton: true
     },
     home: {
       bannerImage: {
         altTexts: {
-          sv: "Porträtt av Zacharias Topelius",
-          fi: "Zacharias Topeliuksen muotokuva"
+          sv: "Svartvitt foto: En leende Henry Parland i Kaunas 1929."
         },
         intrinsicSize: {
           height: null,
@@ -214,7 +152,7 @@ export const config: Config = {
         },
         orientationPortrait: true,
         alternateSources: [],
-        URL: "assets/images/home-page-banner-portrait.jpg"
+        URL: "assets/images/slsa945_3_HP_Kaunas_1929_Sonder.jpg"
       },
       portraitOrientationSettings: {
         imagePlacement: {
@@ -254,9 +192,9 @@ export const config: Config = {
       showURNButton: true,
       showViewOptionsButton: true,
       viewOptions: {
-        personInfo: true,
+        personInfo: false,
         placeInfo: false,
-        workInfo: true,
+        workInfo: false,
         paragraphNumbering: true,
         pageBreakEdition: true
       }
@@ -265,18 +203,18 @@ export const config: Config = {
       showURNButton: true
     },
     text: {
-      defaultViews: ["readingtext", "comments", "facsimiles"],
+      defaultViews: ["readingtext", "comments"],
       defaultViewOptions: ["comments"],
       showTextDownloadButton: true,
       showURNButton: true,
       showViewOptionsButton: true,
       viewOptions: {
         comments: true,
-        personInfo: true,
-        placeInfo: true,
+        personInfo: false,
+        placeInfo: false,
         emendations: true,
         normalisations: true,
-        workInfo: true,
+        workInfo: false,
         abbreviations: true,
         paragraphNumbering: true,
         pageBreakOriginal: true,
@@ -288,8 +226,8 @@ export const config: Config = {
         comments: true,
         facsimiles: true,
         manuscripts: true,
-        variants: true,
-        illustrations: true,
+        variants: false,
+        illustrations: false,
         legend: true,
         metadata: false
       }
@@ -302,8 +240,8 @@ export const config: Config = {
   },
   component: {
     collectionSideMenu: {
-      sortableCollectionsAlphabetical: ["211", "215", "219", "220"],
-      sortableCollectionsChronological: ["215", "219", "220"],
+      sortableCollectionsAlphabetical: [],
+      sortableCollectionsChronological: [],
       sortableCollectionsCategorical: [],
       categoricalSortingPrimaryKey: "",
       categoricalSortingSecondaryKey: ""
@@ -313,8 +251,7 @@ export const config: Config = {
       includeMediaCollection: false,
       mediaCollectionCoverURL: "",
       mediaCollectionCoverAltTexts: {
-        sv: "Alt-text",
-        fi: "Alt-teksti"
+        sv: "Alt-text"
       },
       showTitles: true
     },
@@ -331,12 +268,12 @@ export const config: Config = {
       items: {
         home: false,
         about: true,
-        ebooks: true,
+        ebooks: false,
         collections: true,
-        mediaCollections: true,
+        mediaCollections: false,
         indexKeywords: false,
-        indexPersons: true,
-        indexPlaces: true,
+        indexPersons: false,
+        indexPlaces: false,
         indexWorks: false
       }
     },
@@ -350,10 +287,10 @@ export const config: Config = {
       showContentButton: true,
       showElasticSearchButton: true,
       showURNButton: false,
-      showLanguageButton: true,
+      showLanguageButton: false,
       showSiteLogo: true,
-      siteLogoDefaultImageURL: "assets/images/logo/SLS_logo_full_white_346x112.png",
-      siteLogoMobileImageURL: "assets/images/logo/SLS_logo_symbol_white_112x112.png",
+      siteLogoDefaultImageURL: "assets/images/logo/SLS_logo_full_black_346x112.png",
+      siteLogoMobileImageURL: "assets/images/logo/SLS_logo_symbol_black_112x112.png",
       siteLogoLinkURL: "https://www.sls.fi/",
       siteLogoDimensions: {
         default: {
@@ -417,7 +354,7 @@ export const config: Config = {
       showOccupation: false,
       showOccurrences: true,
       showType: false,
-      useSimpleWorkMetadata: true
+      useSimpleWorkMetadata: false
     }
   }
 }
