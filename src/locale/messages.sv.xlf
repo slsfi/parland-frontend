@@ -1539,19 +1539,19 @@
     <unit id="Site.MetaDescription.Home">
       <segment state="initial">
         <source>En generell beskrivning av webbplatsen för sökmotorer.</source>
-        <target>En generell beskrivning av webbplatsen för sökmotorer.</target>
+        <target>Dikter, prosa, essäer och brev av Henry Parland (1908–1930), den yngste och modernaste i den första generationen finlandssvenska modernister.</target>
       </segment>
     </unit>
     <unit id="Site.Subtitle">
       <segment state="initial">
         <source>Webbplatsens undertitel</source>
-        <target>Webbplatsens undertitel</target>
+        <target>Dikter, prosa, essäer och brev av Henry Parland (1908–1930), den yngste och modernaste i den första generationen finlandssvenska modernister.</target>
       </segment>
     </unit>
     <unit id="Site.Title">
       <segment state="initial">
         <source>Webbplatsens titel</source>
-        <target>Webbplatsens titel</target>
+        <target>Henry Parlands Skrifter</target>
       </segment>
     </unit>
     <unit id="TopMenu.About">

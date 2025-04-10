@@ -188,3 +188,132 @@
   }
 
 */
+
+/* Added custom variables */
+:root {
+  --custom-action-color:          #437A5D;
+  --custom-action-color-contrast: #fff;
+}
+
+/* Override CSS variables */
+:root {
+  --primary-color: #95caa0;
+  --primary-color-rgb: 149, 202, 160;
+  --primary-color-contrast:           #000;
+  --secondary-color:                    #d5d5d5; // #e6e6e6;
+  --main-background-color:                #f2f2f2;
+  --route-loading-progress-bar-color:     rgba(0, 0, 0, 0.2);
+  --default-link-color: #A35290;
+
+  --button-background-color:               var(--custom-action-color);
+  --button-text-color:                     var(--custom-action-color-contrast);
+  --fab-button-primary-background-color:   var(--custom-action-color);
+  --fab-button-primary-icon-color:         var(--custom-action-color-contrast);
+  --outline-button-color:                  var(--custom-action-color);
+
+  --font-stack-app-base:           "Inter", var(--font-stack-system);
+  --font-stack-home-banner:        "futura-pt", var(--font-stack-app-base);
+}
+
+ion-app[class][class] {
+  --top-menu-button-filter:                      none;
+  --side-menu-hover-color:                       var(--custom-action-color);
+  --side-menu-collection-title-background-color: #d0d6e4; // #cecece;
+  --side-menu-selected-background-color:         #CAE2CE;
+}
+
+/* Custom, project specific styles */
+
+/* Home page */
+page-home {
+  .portrait-mode {
+    .banner {
+      background-color: #d0d6e4;
+    }
+    .title-wrapper {
+      .site-subtitle.site-subtitle {
+        font-size: 1.5rem;
+        font-style: normal;
+      }
+    }
+    .text-content.text-content.text-content {
+      max-width: 750px;
+
+      .footer.footer.footer.footer {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.markdown {
+  h1 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-style: normal;
+  }
+
+  ul {
+    line-height: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  ion-content.collection-ion-content {
+    --background: fixed var(--main-background-color) url('/assets/images/collection-pages/oscar-parland-repeat-bg.jpg');
+  }
+}
+
+page-elastic-search {
+  .info.markdown {
+    /* Sökinstruktionerna i avancerade sökningen */
+    details {
+      padding: .5em .5em 0;
+
+      ul li {
+        line-height: 1.5;
+      }
+
+      ul li + li {
+        padding-top: 0.75em;
+      }
+    }
+
+    summary {
+      font-weight: bold;
+      margin: -.5em -.5em 0;
+      padding: .5em;
+    }
+
+    details[open] {
+      border-bottom: 1px solid #aaa;
+      padding: .5em;
+
+      summary {
+        border-bottom: 1px solid #aaa;
+        margin-bottom: .5em;
+      }
+    }
+
+    .query_example {
+      background-color: #fdfdfd;
+      border: 1px solid var(--button-background-color);
+      border-radius: 3px;
+      color: var(--button-background-color);
+      font-family: monospace;
+      font-size: 0.889em;
+      padding: 0.125em 0.25em;
+    }
+  }
+}
+
+/* Cookiebannern */
+a.cky-banner-element {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#cky-consent,
+#cky-settings-popup {
+	font-family: var(--font-stack-app-base);
+}

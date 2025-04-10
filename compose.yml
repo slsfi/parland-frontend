@@ -4,7 +4,7 @@ services:
     depends_on:
       - web
     ports:
-      - 2089:80
+      - 2091:80
     restart: unless-stopped
     volumes:
       - browser-static:/static
@@ -16,7 +16,7 @@ services:
     extra_hosts:
       - "api.sls.fi:172.16.2.136"
       - "granska-api.sls.fi:172.16.2.136"
-    image: ghcr.io/slsfi/digital-edition-frontend-ng:main
+    image: ghcr.io/slsfi/parland-frontend:main
     restart: unless-stopped
     volumes:
       - browser-static:/digital-edition-frontend-ng/dist/app/browser

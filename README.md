@@ -1,14 +1,6 @@
-# Frontend App of the SLS Digital Edition Platform
+# Granska frontend of the digital edition Henry Parlands Skrifter, granska-parland.sls.fi
 
-[`digital-edition-frontend-ng`][digital-edition-frontend-ng] is the frontend application of the [SLS][SLS] platform for building digital edition web apps. It supports features typically found in digital scholarly editions, like reading texts, manuscripts, facsimiles and commentaries in parallell views, as well as media collection libraries, indices of named entities and keywords, and an integrated EPUB-viewer.
-
-Internationalization and server-side rendering are supported out of the box, meaning that your web app will be fully indexable by search engines and readable by AI bots. The frontend app utilizes a responsive design and works on both desktop and mobile devices. Many features of the user interface are easily configurable, and theming is straightforward.
-
-Examples of digital editions employing this frontend app include:
-
-- [Zacharias Topelius Skrifter][topelius]
-- [Historiska recept][historiskarecept]
-- [Leo Mechelin – Pro lege][mechelin]
+This branch contains the "granska" frontend app of the digital edition Henry Parlands Skrifter, <https://granska-parland.sls.fi/>. It is based on [`digital-edition-frontend-ng`][digital-edition-frontend-ng], the frontend app of the [SLS][SLS] platform for building digital edition web apps.
 
 The app is built on [Angular][angular] and uses [Ionic][ionic] web components.
 
@@ -23,23 +15,6 @@ The app is built on [Angular][angular] and uses [Ionic][ionic] web components.
 ## Changelog
 
 [Learn about the latest improvements][changelog].
-
-
-## Setting Up a Project
-
-1. Create a fork of [`digital-edition-frontend-ng`][digital-edition-frontend-ng]. Only include the `main` branch.
-
-2. Rename the default branch of the forked repository `base`, `shared` or something similar.
-
-3. Create a new branch in the forked repository and name it `production`, `prod` or something similar.
-
-4. Configure your project app by editing `/src/assets/config/config.ts`. Documentation on the configuration options is forthcoming.
-
-The `base` branch of the forked repository must **never** be manually modified. It must be kept as a clone of the original ”upstream” `main` branch in [`digital-edition-frontend-ng`][digital-edition-frontend-ng]. When the upstream `main` branch is updated, you can sync the updates to the `base` branch in your forked repository. You can then merge the `base` branch into your `production` branch.
-
-This workflow enables updates to the app in the original, upstream repository to be easily distributed to forked project repositories.
-
-By default, the app has Swedish and Finnish language versions enabled. See the documentation (forthcoming) on how to configure internationalization, customize your app, build it for production and deploy it.
 
 
 ## Documentation
@@ -125,11 +100,8 @@ The platform consists of an [Angular frontend app][digital-edition-frontend-ng],
 [git_bash]: https://gitforwindows.org/
 [gith_bash_tutorial]: https://www.atlassian.com/git/tutorials/git-bash
 [github_desktop]: https://desktop.github.com/
-[historiskarecept]: https://historiskarecept.sls.fi/
 [ionic]: https://ionicframework.com/
-[mechelin]: https://leomechelin.fi/
 [node.js]: https://nodejs.org/
 [npm]: https://www.npmjs.com/get-npm
 [SLS]: https://www.sls.fi/en
 [TEI]: https://tei-c.org/
-[topelius]: https://topelius.sls.fi/
