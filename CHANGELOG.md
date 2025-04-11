@@ -10,6 +10,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 
 
+## [1.5.8-granska.1] – 2025-04-11
+
+### Changed
+
+- Merge release [`v1.5.8`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/1.5.8) from upstream, original repository into `granska` branch. ([be57257](https://github.com/slsfi/parland-frontend/commit/be57257e3c4fba2a1c6735461c2dcdc65d2eb2a6))
+
+
+
 ## [1.5.8] – 2025-04-11
 
 ### Changed
@@ -577,4 +585,5 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[1.5.8-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.5.7-granska.1...1.5.8-granska.1
 [1.5.7-granska.1]: https://github.com/slsfi/parland-frontend/releases/tag/1.5.7-granska.1
