@@ -253,10 +253,6 @@ page-home {
     font-size: 2.5rem;
     font-style: normal;
   }
-
-  ul {
-    line-height: 1.5em;
-  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -270,10 +266,6 @@ page-elastic-search {
     /* Sökinstruktionerna i avancerade sökningen */
     details {
       padding: .5em .5em 0;
-
-      ul li {
-        line-height: 1.5;
-      }
 
       ul li + li {
         padding-top: 0.75em;

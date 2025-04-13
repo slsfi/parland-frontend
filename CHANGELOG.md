@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [Unreleased]
 
+### Changed
+
+- Remove line-height styles from `ul` in custom CSS.
+
 
 
 ## [1.5.8-granska.1] – 2025-04-11
