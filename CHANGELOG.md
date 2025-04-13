@@ -8,17 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [Unreleased]
 
-### Changed
-
-- Remove line-height styles from `ul` in custom CSS.
 
 
-
-## [1.5.8-granska.1] – 2025-04-11
+## [1.6.0-granska.1] – 2025-04-13
 
 ### Changed
 
-- Merge release [`v1.5.8`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/1.5.8) from upstream, original repository into `granska` branch. ([be57257](https://github.com/slsfi/parland-frontend/commit/be57257e3c4fba2a1c6735461c2dcdc65d2eb2a6))
+- Remove line-height styles from `ul` in custom CSS. ([5724a83](https://github.com/slsfi/parland-frontend/commit/5724a8389b11909193f2f1d1bb45ec47664d4779))
+- Merge release [`v1.6.0`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/1.6.0) from upstream, original repository into `granska` branch. ([9ab0868](https://github.com/slsfi/parland-frontend/commit/9ab0868a38fe08d5bbcd5cf1ea26d41a4e098745))
 
 
 
@@ -32,6 +29,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 - Truncate console error message when loading of static collection TOC fails. ([13eb19c](https://github.com/slsfi/digital-edition-frontend-ng/commit/13eb19c95829718e64c974c178114f8fbc284563))
 - Adjust CSS of Markdown content. ([9cb8e82](https://github.com/slsfi/digital-edition-frontend-ng/commit/9cb8e82b1690f5651852991360cb5c477ea09850))
+
+
+
+## [1.5.8-granska.1] – 2025-04-11
+
+### Changed
+
+- Merge release [`v1.5.8`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/1.5.8) from upstream, original repository into `granska` branch. ([be57257](https://github.com/slsfi/parland-frontend/commit/be57257e3c4fba2a1c6735461c2dcdc65d2eb2a6))
 
 
 
@@ -603,5 +608,6 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[1.6.0-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.5.8-granska.1...1.6.0-granska.1
 [1.5.8-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.5.7-granska.1...1.5.8-granska.1
 [1.5.7-granska.1]: https://github.com/slsfi/parland-frontend/releases/tag/1.5.7-granska.1
