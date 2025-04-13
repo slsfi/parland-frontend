@@ -203,7 +203,7 @@
   --secondary-color:                    #d5d5d5; // #e6e6e6;
   --main-background-color:                #f2f2f2;
   --route-loading-progress-bar-color:     rgba(0, 0, 0, 0.2);
-  --default-link-color: #A35290;
+  --default-link-color: #26499C;
 
   --button-background-color:               var(--custom-action-color);
   --button-text-color:                     var(--custom-action-color-contrast);
@@ -252,6 +252,23 @@ page-home {
     font-weight: 400;
     font-size: 2.5rem;
     font-style: normal;
+  }
+
+  table {
+    margin: 1em 0;
+  }
+
+  td, th {
+    padding: 0 0 0.25em 0;
+    text-align: left;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  td + td, th + th {
+    padding-left: 1em;
   }
 }
 
