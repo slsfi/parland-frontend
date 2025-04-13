@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [Unreleased]
 
+### Changed
+
+- Adjust link color and markdown table styles.
+
 
 
 ## [1.6.0-granska.1] – 2025-04-13
