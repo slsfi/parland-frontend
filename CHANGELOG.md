@@ -8,9 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [Unreleased]
 
+
+
+## [1.6.0-granska.2] – 2025-04-13
+
 ### Changed
 
-- Adjust link color and markdown table styles.
+- Adjust link color and markdown table styles. ([2190a5e](https://github.com/slsfi/parland-frontend/commit/2190a5e214dd4bb5978f0fa799d1ab62203cf768))
 
 
 
@@ -612,6 +616,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[1.6.0-granska.2]: https://github.com/slsfi/parland-frontend/compare/1.6.0-granska.1...1.6.0-granska.2
 [1.6.0-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.5.8-granska.1...1.6.0-granska.1
 [1.5.8-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.5.7-granska.1...1.5.8-granska.1
 [1.5.7-granska.1]: https://github.com/slsfi/parland-frontend/releases/tag/1.5.7-granska.1
