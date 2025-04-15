@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 ### Changed
 
 - Adjust link color and markdown table styles. ([2190a5e](https://github.com/slsfi/parland-frontend/commit/2190a5e214dd4bb5978f0fa799d1ab62203cf768))
+- Update config.
 
 ### Fixed
 
