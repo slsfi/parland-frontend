@@ -35,7 +35,7 @@ export const config: Config = {
     }
   },
   collections: {
-    addTEIClassNames: true,
+    addTEIClassNames: false,
     replaceImageAssetsPaths: false,
     enableLegacyIDs: true,
     enableMathJax: false,
@@ -188,7 +188,7 @@ export const config: Config = {
     },
     introduction: {
       hasSeparateTOC: true,
-      showTextDownloadButton: true,
+      showTextDownloadButton: false,
       showURNButton: true,
       showViewOptionsButton: true,
       viewOptions: {
@@ -196,16 +196,16 @@ export const config: Config = {
         placeInfo: false,
         workInfo: false,
         paragraphNumbering: true,
-        pageBreakEdition: true
+        pageBreakEdition: false
       }
     },
     mediaCollection: {
       showURNButton: true
     },
     text: {
-      defaultViews: ["readingtext", "comments"],
-      defaultViewOptions: ["comments"],
-      showTextDownloadButton: true,
+      defaultViews: ["readingtext"],
+      defaultViewOptions: [],
+      showTextDownloadButton: false,
       showURNButton: true,
       showViewOptionsButton: true,
       viewOptions: {
