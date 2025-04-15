@@ -211,7 +211,7 @@
   --fab-button-primary-icon-color:         var(--custom-action-color-contrast);
   --outline-button-color:                  var(--custom-action-color);
 
-  --font-stack-app-base:           "Inter", var(--font-stack-system);
+  --font-stack-app-base:           Inter, var(--font-stack-system);
   --font-stack-home-banner:        "futura-pt", var(--font-stack-app-base);
 }
 
@@ -325,4 +325,73 @@ a.cky-banner-element {
 #cky-consent,
 #cky-settings-popup {
 	font-family: var(--font-stack-app-base);
+}
+
+/* Parland TEI-styles */
+div.tei {
+  h3.title1.title1 {
+    margin: 0 0 0.5em 0;
+  }
+
+  
+  h3.romanNumeral {
+    /*
+    Romerska siffrorna som numrerar dikterna i Idealrealisation:
+    text-indent: 1em;
+    */
+    margin-bottom: 1.5em;
+  }
+
+  hr.milestoneBar.center_poem {
+    margin-left: 3em;
+  }
+}
+
+comments div.tei {
+  h3.title1,
+  h4.sub_com {
+    font-family: var(--font-stack-app-base);
+    font-variant: normal;
+  }
+
+  h3.title1 {
+    font-size: 1.25em !important;
+  }
+
+  h4.teiComment.sub_com {
+    font-size: 1.125em !important;
+    font-style: normal;
+    margin-top: 2em !important;
+  }
+
+  p:not(.note):not(.strofe) {
+    margin-bottom: 0.75em;
+    text-indent: 0;
+  }
+
+  p.teiComment.note {
+    padding-left: 1.825em;
+    text-indent: -1.825em;
+  }
+
+  p.tei.l,
+  p.teiComment.forTable {
+    margin-bottom: 0;
+  }
+
+  p.teiComment.parIndent {
+    text-indent: 0 !important;
+  }
+
+  .com_quote {
+    margin: 1.5em 2em;
+  }
+
+  table {
+    margin-bottom: 1em;
+
+    .first {
+      white-space: nowrap;
+    }
+  }
 }
