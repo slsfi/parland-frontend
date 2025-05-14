@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 ### Changed
 
 - Update to base version [`1.6.4`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/1.6.4) from upstream, original repository.
+- Update disallow rules in `robots.txt`.
 
 
 
