@@ -6,7 +6,69 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 
 
-## [Unreleased]
+## Unreleased
+
+### Changed
+
+- Update to base version [`1.6.4`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/1.6.4) from upstream, original repository.
+
+
+
+## [1.6.4] – 2025-05-14
+
+### Fixed
+
+- SSR of ebooks in pdf-format blocked. ([0cff40a](https://github.com/slsfi/digital-edition-frontend-ng/commit/0cff40af045b7d85d35147ad860232f6648c1930))
+
+### Changed
+
+- Deps (dev): update `@types/node` to 20.17.47. ([ed89e0c](https://github.com/slsfi/digital-edition-frontend-ng/commit/ed89e0c1667bd90e25accac677cd0700c8f77475))
+
+
+
+## [1.6.3] – 2025-05-13
+
+> [!NOTE]
+> This release increases the proxy buffer size in `nginx` to a total of 384 KB per request (`24 16k`). For projects where the majority of SSR HTML is larger than that, it might be useful to increase the buffer size even more, for example to `32 16k` (corresponding to a total of 512 KB per request). This prevents `nginx` from buffering large requests on disk, but might have other trade offs.
+
+### Changed
+
+- Optimize SSR asset handling and clarify routing logic in `server.ts`. ([a223a4a](https://github.com/slsfi/digital-edition-frontend-ng/commit/a223a4abcf8c854d17a2d1b85e2e39a00fb276b7))
+- Increase proxy buffer sizes in `nginx` config to reduce disk buffering for large SSR pages. ([0bfda62](https://github.com/slsfi/digital-edition-frontend-ng/commit/0bfda62dba88b838bfe9ef586e8a7954a880c6a3))
+- Optimize cache control of static files in `nginx` config. ([ff3f496](https://github.com/slsfi/digital-edition-frontend-ng/commit/ff3f4965bcab9b11551c4e9fadcc0344c4131c06))
+- Update dependency notes in docs. ([3483c23](https://github.com/slsfi/digital-edition-frontend-ng/commit/3483c235e13db7127f1042b0dcdb9dc3398680a5))
+- Update `nginx` to 1.28.0. ([00d1a6e](https://github.com/slsfi/digital-edition-frontend-ng/commit/00d1a6ec8beb9a41fc5a031cb2da8f22ca5c4325))
+- Deps: update `@angular/cli` to 19.2.11 and `@angular/core` to 19.2.10. ([2bab396](https://github.com/slsfi/digital-edition-frontend-ng/commit/2bab396b55b2ab136db97fd2ad2449927720c673))
+- Deps (dev): update `@types/jasmine` to 5.1.8. ([1c549fb](https://github.com/slsfi/digital-edition-frontend-ng/commit/1c549fb83be9af82f5fc6f99cb3c5d7bc8f0c359))
+- Deps (dev): update `@types/node` to 20.17.46. ([19e7c6f](https://github.com/slsfi/digital-edition-frontend-ng/commit/19e7c6f1596bcf402da7e2fec977557b4e5c4f1c))
+
+
+
+## [1.6.2] – 2025-05-05
+
+> [!NOTE]
+> This release, in spite of being a patch release, might introduce breaking changes for projects that have customized the Angular HTML templates, as it contains a migration to the new Angular control flow syntax.
+
+### Changed
+
+- Defer loading of the text-legend component. ([a672d5d](https://github.com/slsfi/digital-edition-frontend-ng/commit/a672d5d549995100eb51ec0336cd87fdd98a71b6))
+- Defer loading of the variants component. ([9b79c42](https://github.com/slsfi/digital-edition-frontend-ng/commit/9b79c42dbc5572f87dea59d470b63a3c7d8b63dc))
+- Migrate templates to new Angular control flow syntax. ([a237511](https://github.com/slsfi/digital-edition-frontend-ng/commit/a237511cffe3751a7828f14123f78fe7bd989a1b))
+- Load index list data in SSR only when named entity modal not shown. ([d64ad09](https://github.com/slsfi/digital-edition-frontend-ng/commit/d64ad0905f1a44eb793f22a90cc661ec26c06cb2))
+- Deps: update `@angular/cli` to 19.2.10 and `@angular/core` to 19.2.9. ([314bf2c](https://github.com/slsfi/digital-edition-frontend-ng/commit/314bf2c26e5f103725c4e2970c5ea9afe5849a93))
+- Deps (dev): update `jasmine-core` to 5.7.1. ([9ba2111](https://github.com/slsfi/digital-edition-frontend-ng/commit/9ba2111683039728cf36ee4e79ad58cf43667c75))
+
+### Fixed
+
+- Occurrences accordion: guard against empty collection ToC, and ensure ToC subscription completes. ([f4f871f](https://github.com/slsfi/digital-edition-frontend-ng/commit/f4f871f0712853d6661e431a68bb1121b149f677))
+
+
+
+## [1.6.1] – 2025-04-29
+
+- Deps: update `@angular/cli` to 19.2.9 and `@angular/core` to 19.2.8. ([45f6c18](https://github.com/slsfi/digital-edition-frontend-ng/commit/45f6c182a4cf2097c99a94f72e467d00e2ff5096))
+- Deps: update `marked` to 15.0.11. ([2f749b2](https://github.com/slsfi/digital-edition-frontend-ng/commit/2f749b2ca4dd16ac70314e59c4a97fabd9268898))
+- Deps (dev): update `@types/node` to 20.17.32. ([c09b87f](https://github.com/slsfi/digital-edition-frontend-ng/commit/c09b87f8e3c53b5c7414058919c4277f7925bfe0))
 
 
 
@@ -596,7 +658,11 @@ siteLogoDimensions: {
 
 
 
-[unreleased]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.6.0...HEAD
+[unreleased]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.6.4...HEAD
+[1.6.4]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.6.3...1.6.4
+[1.6.3]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.6.2...1.6.3
+[1.6.2]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.6.1...1.6.2
+[1.6.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.6.0...1.6.1
 [1.6.0]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.5.8...1.6.0
 [1.5.8]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.5.7...1.5.8
 [1.5.7]: https://github.com/slsfi/digital-edition-frontend-ng/compare/1.5.6...1.5.7
