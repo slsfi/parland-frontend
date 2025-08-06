@@ -4,8 +4,8 @@ export const config: Config = {
   app: {
     siteURLOrigin: "https://granska-parland.sls.fi",
     projectNameDB: "parland",
-    projectId: 63,
-    backendBaseURL: "https://granska-api.sls.fi/digitaledition",
+    projectId: 1,
+    backendBaseURL: "https://testa-parland-api.sls.fi/digitaledition",
     alternateFacsimileBaseURL: "",
     i18n: {
       languages: [
@@ -56,7 +56,7 @@ export const config: Config = {
     inlineIllustrations: [],
     mediaCollectionMappings: {},
     order: [
-      [2575, 2577, 2579, 2580, 2578]
+      [1, 2, 3, 4, 5]
     ]
   },
   ebooks: [],
