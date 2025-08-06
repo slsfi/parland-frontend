@@ -225,6 +225,21 @@ ion-app[class][class] {
 
 /* Custom, project specific styles */
 
+top-menu {
+  div.site-title {
+    a {
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: normal;
+      text-transform: uppercase;
+
+      @media only screen and (min-width: 540px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
 /* Home page */
 page-home {
   .portrait-mode {
