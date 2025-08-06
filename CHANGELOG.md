@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 - Update to base version [`2.0.0`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.0.0) from upstream, original repository.
 - Switch to testa-parland-api.sls.fi backend.
+- Modify site title style in top menu bar.
 
 
 
