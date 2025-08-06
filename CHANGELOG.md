@@ -8,11 +8,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+
+
+## [2.0.0-granska.1] – 2025-08-06
+
 ### Changed
 
-- Update to base version [`2.0.0`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.0.0) from upstream, original repository.
-- Switch to testa-parland-api.sls.fi backend.
-- Modify site title style in top menu bar.
+- Update to base version [`2.0.0`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.0.0) from upstream, original repository. ([09a43ab](https://github.com/slsfi/parland-frontend/commit/09a43abe2ba06a3ef5d6dd17bc4e9b5f9fd89d46))
+- Switch to testa-parland-api.sls.fi backend. ([fa09e7b](https://github.com/slsfi/parland-frontend/commit/fa09e7b47ebd9b8db894164db8df82bb2a72c673))
+- Modify site title style in top menu bar. ([6c80240](https://github.com/slsfi/parland-frontend/commit/6c80240f4ecf954250c3dc2d112b59185f130285))
 
 
 
@@ -969,6 +973,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[2.0.0-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.8.2-granska.1...2.0.0-granska.1
 [1.8.2-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.6.5-granska.1...1.8.2-granska.1
 [1.6.5-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.6.4-granska.1...1.6.5-granska.1
 [1.6.4-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.6.0-granska.3...1.6.4-granska.1
