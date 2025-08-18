@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { catchError, forkJoin, map, Observable, of } from 'rxjs';
 
 import { config } from '@config';
+import { Article } from '@models/article.model';
 import { ArrayIncludesPipe } from '@pipes/array-includes.pipe';
 import { ParentChildPagePathPipe } from '@pipes/parent-child-page-path.pipe';
 import { CollectionsService } from '@services/collections.service';
@@ -36,7 +37,6 @@ import { addOrRemoveValueInNewArray, sortArrayOfObjectsAlphabetically, splitFile
 export class MainSideMenuComponent implements OnInit, OnChanges {
   @Input() urlSegments: UrlSegment[] = [];
 
-  ebooksList: any[] = [];
   highlightedMenu: string = '';
   mainMenu: any[] = [];
   selectedMenu: string[] = [];
@@ -53,16 +53,7 @@ export class MainSideMenuComponent implements OnInit, OnChanges {
     private mdcontentService: MarkdownService,
     private mediaCollectionService: MediaCollectionService,
     @Inject(LOCALE_ID) private activeLocale: string
-  ) {
-    this.ebooksList = config.ebooks ?? [];
-
-    if (this.ebooksList) {
-      this.ebooksList.forEach((ebook: any) => {
-        const filenameparts = splitFilename(ebook.filename);
-        ebook.id = filenameparts.name;
-      });
-    }
-  }
+  ) {}
 
   ngOnInit() {
     this.getMenuData().subscribe(
@@ -132,6 +123,7 @@ export class MainSideMenuComponent implements OnInit, OnChanges {
     const menuItemGetters: Record<string, () => Observable<any>> = {
       home: () => this.getHomePageMenuItem(),
       about: () => this.getAboutPagesMenu(),
+      articles: () => this.getArticlePagesMenu(),
       ebooks: () => this.getEbookPagesMenu(),
       collections: () => this.getCollectionPagesMenu(),
       mediaCollections: () => this.getMediaCollectionPagesMenu(),
@@ -159,6 +151,7 @@ export class MainSideMenuComponent implements OnInit, OnChanges {
       map((res: any) => {
         res = [res];
         this.recursivelyAddParentPagePath(res, '/about');
+
         return { menuType: 'about', menuData: res };
       }),
       catchError((error: any) => {
@@ -168,10 +161,35 @@ export class MainSideMenuComponent implements OnInit, OnChanges {
     );
   }
 
+  private getArticlePagesMenu(): Observable<any> {
+    if (!config.articles?.length) {
+      return of({ menuType: 'article', menuData: [] });
+    }
+
+    return this.mdcontentService.getMenuTree(
+      this.activeLocale, '04'
+    ).pipe(
+      map((res: any) => {
+        res = [res];
+        if (config.component?.mainSideMenu?.ungroupArticles) {
+          res = res[0]?.children ?? [];
+        }
+        this.recursivelyAddParentPagePath(res, '/article');
+        this.recursivelyMapArticleData(res);
+
+        return { menuType: 'article', menuData: res };
+      }),
+      catchError((error: any) => {
+        console.error(error);
+        return of({ menuType: 'article', menuData: [] });
+      })
+    );
+  }
+
   private getEbookPagesMenu(): Observable<any> {
     let menuData: any[] = [];
-    if (this.ebooksList.length) {
-      this.ebooksList.forEach(ebook => {
+    if (config.ebooks?.length) {
+      config.ebooks.forEach((ebook: any) => {
         const filenameparts = splitFilename(ebook.filename);
         menuData.push({
           id: filenameparts.name,
@@ -179,7 +197,7 @@ export class MainSideMenuComponent implements OnInit, OnChanges {
           parentPath: `/ebook/${filenameparts.extension}`
         });
       });
-      if (this.ebooksList.length > 1) {
+      if (menuData.length > 1) {
         menuData = [{
           title: $localize`:@@MainSideMenu.Ebooks:E-böcker`,
           children: menuData
@@ -315,6 +333,30 @@ export class MainSideMenuComponent implements OnInit, OnChanges {
       array[i]["nodeId"] = (parentNodeId ? parentNodeId + '-' : 'n') + (i+1);
       if (array[i]["children"] && array[i]["children"].length) {
         this.recursiveAddNodeIdsToMenu(array[i]["children"], array[i]["nodeId"]);
+      }
+    }
+  }
+
+  /**
+   * Goes through every object in @param array, including nested objects declared
+   * as in 'children' properties, and adds a new property 'articleId'
+   * with the value of the id property, and replaces the id property with the mapped
+   * value of the article routeName from the config. Also replaces the 'title'
+   * property value with the mapped title from the config.
+   */
+  private recursivelyMapArticleData(array: any[]) {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i]["type"] === "file") {
+        const origId = array[i]["id"];
+        const article: Article = config.articles?.find(
+          (article: Article) => (article.id === origId && article.language === this.activeLocale)
+        ) ?? null;
+        array[i]["id"] = article?.routeName ?? origId;
+        array[i]["title"] = article?.title ?? array[i]["title"];
+      } else {
+        if (array[i]["children"] && array[i]["children"].length) {
+          this.recursivelyMapArticleData(array[i]["children"]);
+        }
       }
     }
   }
