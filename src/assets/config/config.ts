@@ -54,7 +54,7 @@ export const config: Config = {
       introduction: []
     },
     highlightSearchMatches: true,
-    inlineIllustrations: [],
+    inlineIllustrations: [2, 3],
     mediaCollectionMappings: {},
     order: [
       [1, 2, 3, 4, 5]
