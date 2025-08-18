@@ -8,15 +8,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+
+
+## [2.1.1-granska.1] – 2025-08-18
+
 ### Added
 
-- Collection page images.
+- Collection page images. ([8688dbe](https://github.com/slsfi/parland-frontend/commit/8688dbece479ddf9925b2703d89416b59b22fcc9))
 
 ### Changed
 
-- Update to base version [`2.1.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.1.1) from upstream, original repository.
-- Enable inline images for ’Prosa’ and ’Kritik’.
-- Disable sitemap and static collection menus generating prebuild scripts.
+- Update to base version [`2.1.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.1.1) from upstream, original repository. ([b16ca2b](https://github.com/slsfi/parland-frontend/commit/b16ca2bd7d3f24c37dd2ac95bf89568dc71df6ca))
+- Enable inline images for ’Prosa’ and ’Kritik’. ([81383c5](https://github.com/slsfi/parland-frontend/commit/81383c51e962ce20e2d4fcd959fdd8c287e0e784))
+- Disable sitemap and static collection menus generating prebuild scripts. ([163ce39](https://github.com/slsfi/parland-frontend/commit/163ce3950346455aef90af2eaabce598b7697079))
 
 
 
@@ -1080,6 +1084,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[2.1.1-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.0.0-granska.1...2.1.1-granska.1
 [2.0.0-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.8.2-granska.1...2.0.0-granska.1
 [1.8.2-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.6.5-granska.1...1.8.2-granska.1
 [1.6.5-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.6.4-granska.1...1.6.5-granska.1
