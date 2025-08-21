@@ -333,6 +333,10 @@ page-elastic-search {
   }
 }
 
+page-article[class][class] {
+  --intro-toc-background-color: var(--side-menu-background-color);
+}
+
 /* Cookiebannern */
 a.cky-banner-element {
   cursor: pointer;
