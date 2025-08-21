@@ -34,7 +34,17 @@ export const config: Config = {
       collectionSideMenu: false
     }
   },
-  articles: [],
+  articles: [
+    {
+      id: "04-01",
+      language: "sv",
+      routeName: "om-henry-parland",
+      title: "Om Henry Parland",
+      coverURL: "",
+      enableTOC: true,
+      downloadOptions: []
+    }
+  ],
   collections: {
     addTEIClassNames: false,
     replaceImageAssetsPaths: false,
@@ -248,9 +258,9 @@ export const config: Config = {
       },
       viewTypeDisabledCollections: {
         readingtext: [],
-        comments: [],
+        comments: [4],
         facsimiles: [],
-        manuscripts: [],
+        manuscripts: [5],
         variants: [],
         illustrations: [],
         legend: [],
@@ -288,7 +298,7 @@ export const config: Config = {
     mainSideMenu: {
       items: {
         about: true,
-        articles: false,
+        articles: true,
         ebooks: false,
         collections: true,
         mediaCollections: false,
@@ -298,8 +308,8 @@ export const config: Config = {
         indexWorks: false,
         search: true
       },
-      defaultExpanded: false,
-      ungroupArticles: false
+      defaultExpanded: true,
+      ungroupArticles: true
     },
     manuscripts: {
       showTitle: true,
