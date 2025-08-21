@@ -8,10 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+
+
+## [2.1.1-granska.2] – 2025-08-21
+
 ### Changed
 
-- Update custom CSS.
-- Update config.
+- Update custom CSS. ([3212f9c](https://github.com/slsfi/parland-frontend/commit/3212f9ca870a00ed1e615eb6ce92c15308e30c11). [b2fb310](https://github.com/slsfi/parland-frontend/commit/b2fb310bb7dc5284e9af0fdadcbb7d88ff04bdf4))
+- Update config. ([49fea6f](https://github.com/slsfi/parland-frontend/commit/49fea6ffe2565c45632269d7af72cb3100a93ec1))
 
 
 
@@ -1089,6 +1093,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[2.1.1-granska.2]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.1...2.1.1-granska.2
 [2.1.1-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.0.0-granska.1...2.1.1-granska.1
 [2.0.0-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.8.2-granska.1...2.0.0-granska.1
 [1.8.2-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.6.5-granska.1...1.8.2-granska.1
