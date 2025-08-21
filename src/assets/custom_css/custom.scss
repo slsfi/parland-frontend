@@ -345,11 +345,32 @@ a.cky-banner-element {
 
 /* Parland TEI-styles */
 div.tei {
-  h3.title1.title1 {
-    margin: 0 0 0.5em 0;
+  h3 {
+    &.title1.title1 {
+      margin: 0 0 0.5em 0;
+    }
+
+    &.ed_1,
+    &.section101 {
+      font-size: 1.6471em;
+      font-variant: small-caps;
+      margin: 1em 0 !important;
+      text-align: center;
+    }
+
+    &.section103 {
+      font-size: 1.25em;
+      margin: 1em 0;
+      text-align: center;
+    }
   }
 
-  
+  div.ficprose_section {
+    font-size: 1.76471em;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+
   h3.romanNumeral {
     /*
     Romerska siffrorna som numrerar dikterna i Idealrealisation:
@@ -360,6 +381,14 @@ div.tei {
 
   hr.milestoneBar.center_poem {
     margin-left: 3em;
+  }
+
+  span.pieterUnderline {
+    text-decoration: underline;
+  }
+
+  .com_quote {
+    margin: 1.5em 2em;
   }
 }
 
@@ -397,10 +426,6 @@ comments div.tei {
 
   p.teiComment.parIndent {
     text-indent: 0 !important;
-  }
-
-  .com_quote {
-    margin: 1.5em 2em;
   }
 
   table {
