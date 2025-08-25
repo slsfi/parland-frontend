@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ### Changed
 
-- Add testa-parland-api.sls.fi to extra hosts in compose file.
+- Add testa-parland-api.sls.fi to extra hosts in compose file. ([17e13ad](https://github.com/slsfi/parland-frontend/commit/17e13ad7ccdb59e65c5f105d1cd31f6523449705))
 
 
 
@@ -1097,6 +1097,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[2.1.1-granska.3]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.2...2.1.1-granska.3
 [2.1.1-granska.2]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.1...2.1.1-granska.2
 [2.1.1-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.0.0-granska.1...2.1.1-granska.1
 [2.0.0-granska.1]: https://github.com/slsfi/parland-frontend/compare/1.8.2-granska.1...2.0.0-granska.1
