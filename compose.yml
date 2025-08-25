@@ -16,6 +16,7 @@ services:
     extra_hosts:
       - "api.sls.fi:172.16.2.136"
       - "granska-api.sls.fi:172.16.2.136"
+      - "testa-parland-api.sls.fi:10.0.32.143"
     image: ghcr.io/slsfi/parland-frontend:2.1.1-granska.2
     restart: unless-stopped
     volumes:

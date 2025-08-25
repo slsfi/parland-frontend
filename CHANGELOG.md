@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+### Changed
+
+- Add testa-parland-api.sls.fi to extra hosts in compose file.
+
 
 
 ## [2.1.1-granska.2] – 2025-08-21
