@@ -5,7 +5,7 @@ export const config: Config = {
     siteURLOrigin: "https://granska-parland.sls.fi",
     projectNameDB: "parland",
     projectId: 1,
-    backendBaseURL: "https://testa-parland-api.sls.fi/digitaledition",
+    backendBaseURL: "https://granska-parland-api.sls.fi/digitaledition",
     alternateFacsimileBaseURL: "",
     i18n: {
       languages: [
