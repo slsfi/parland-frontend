@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ### Changed
 
-- Add testa-parland-api.sls.fi to extra hosts in compose file. ([17e13ad](https://github.com/slsfi/parland-frontend/commit/17e13ad7ccdb59e65c5f105d1cd31f6523449705))
+- Backend API to granska-parland-api.sls.fi.
 
 
 
