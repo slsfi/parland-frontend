@@ -13,6 +13,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 - Update to base version [`2.2.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.2.1) from upstream, original repository.
 - Enable comments in ’Korrespondens’.
 
+### Fixed
+
+- No top margin for first child heading in comments.
+
 
 
 ## [2.1.1-granska.4] – 2025-09-03

@@ -415,6 +415,10 @@ comments div.tei {
     font-size: 1.125em !important;
     font-style: normal;
     margin-top: 2em !important;
+
+    &:first-child {
+      margin-top: 0 !important;
+    }
   }
 
   p:not(.note):not(.strofe) {
