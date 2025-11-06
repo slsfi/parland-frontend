@@ -258,7 +258,7 @@ export const config: Config = {
       },
       viewTypeDisabledCollections: {
         readingtext: [],
-        comments: [4],
+        comments: [],
         facsimiles: [],
         manuscripts: [5],
         variants: [],
