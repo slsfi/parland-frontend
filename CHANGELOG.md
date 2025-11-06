@@ -8,14 +8,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+
+
+## [2.2.1-granska.1] – 2025-11-06
+
 ### Changed
 
-- Update to base version [`2.2.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.2.1) from upstream, original repository.
-- Enable comments in ’Korrespondens’.
+- Update to base version [`2.2.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.2.1) from upstream, original repository. ([f09e9a4](https://github.com/slsfi/parland-frontend/commit/f09e9a4da54a73a5a4d40c26150f14b5860b7f37))
+- Enable comments in ’Korrespondens’. ([9619a0b](https://github.com/slsfi/parland-frontend/commit/9619a0bd3ca862565c7fd31ab2935326e91d466e))
 
 ### Fixed
 
-- No top margin for first child heading in comments.
+- No top margin for first child heading in comments. ([c3a0b6f](https://github.com/slsfi/parland-frontend/commit/c3a0b6fca98ea416fced783860309c08693843ca))
 
 
 
@@ -1183,6 +1187,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[2.2.1-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.4...2.2.1-granska.1
 [2.1.1-granska.4]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.3...2.1.1-granska.4
 [2.1.1-granska.3]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.2...2.1.1-granska.3
 [2.1.1-granska.2]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.1...2.1.1-granska.2
