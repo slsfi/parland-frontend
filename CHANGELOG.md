@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+### Changed
+
+- Update custom CSS with styles from original site, mainly for manuscripts.
+
 
 
 ## [2.2.1-granska.1] – 2025-11-06
