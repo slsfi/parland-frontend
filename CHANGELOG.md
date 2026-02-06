@@ -8,9 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+
+
+## [2.2.1-granska.3] – 2026-02-06
+
 ### Changed
 
-- Configure ElasticSearch.
+- Configure ElasticSearch. ([2517ff6](https://github.com/slsfi/parland-frontend/commit/2517ff6a5eddb147e5ef56e83cdc065961fb41ca))
 
 
 
@@ -1199,6 +1203,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[2.2.1-granska.3]: https://github.com/slsfi/parland-frontend/compare/2.2.1-granska.2...2.2.1-granska.3
 [2.2.1-granska.2]: https://github.com/slsfi/parland-frontend/compare/2.2.1-granska.1...2.2.1-granska.2
 [2.2.1-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.4...2.2.1-granska.1
 [2.1.1-granska.4]: https://github.com/slsfi/parland-frontend/compare/2.1.1-granska.3...2.1.1-granska.4
