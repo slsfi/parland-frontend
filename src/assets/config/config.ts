@@ -81,15 +81,15 @@ export const config: Config = {
     },
     elasticSearch: {
       enableFilters: true,
-      enableSortOptions: true,
-      filterGroupsOpenByDefault: ["Years", "Type", "Genre", "Collection"],
+      enableSortOptions: false,
+      filterGroupsOpenByDefault: ["Type", "Collection"],
       hitsPerPage: 15,
       indices: ["parland"],
       openReadingTextWithComments: false,
       textHighlightFragmentSize: 150,
       textHighlightType: "fvh",
       textTitleHighlightType: "fvh",
-      typeFilterGroupOptions: ["est", "com", "var", "inl", "tit", "fore"],
+      typeFilterGroupOptions: ["est", "com", "ms", "inl", "tit", "fore"],
       fixedFilters: [
         {
           terms: {
@@ -98,29 +98,15 @@ export const config: Config = {
         },
         {
           terms: {
-            published: ["2"]
+            published: ["1", "2"]
           }
         }
       ],
       additionalSourceFields: [],
       aggregations: {
-        Years: {
-          date_histogram: {
-            field: "orig_date_sort",
-            calendar_interval: "year",
-            format: "yyyy"
-          }
-        },
         Type: {
           terms: {
             field: "text_type",
-            size: 40,
-            order: {_key: "asc"}
-          }
-        },
-        Genre: {
-          terms: {
-            field: "publication_data.genre.keyword",
             size: 40,
             order: {_key: "asc"}
           }
@@ -130,30 +116,6 @@ export const config: Config = {
             field: "publication_data.collection_name.keyword",
             size: 40,
             order: {_key: "asc"}
-          }
-        },
-        LetterSenderName: {
-          terms: {
-            field: "sender_subject_name.keyword",
-            size: 100
-          }
-        },
-        LetterReceiverName: {
-          terms: {
-            field: "receiver_subject_name.keyword",
-            size: 100
-          }
-        },
-        LetterSenderLocation: {
-          terms: {
-            field: "sender_location_name.keyword",
-            size: 50
-          }
-        },
-        LetterReceiverLocation: {
-          terms: {
-            field: "receiver_location_name.keyword",
-            size: 50
           }
         }
       }
