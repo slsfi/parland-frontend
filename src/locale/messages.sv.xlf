@@ -522,6 +522,12 @@
         <target>Dölj avgränsningar</target>
       </segment>
     </unit>
+    <unit id="ElasticSearch.Language">
+      <segment state="initial">
+        <source>Språk</source>
+        <target>Språk</target>
+      </segment>
+    </unit>
     <unit id="ElasticSearch.LetterReceiverLocation">
       <segment state="initial">
         <source>Mottagarort (brev)</source>
@@ -904,6 +910,12 @@
       <segment state="initial">
         <source>Personkategorier</source>
         <target>Personkategorier</target>
+      </segment>
+    </unit>
+    <unit id="Language.Undefined">
+      <segment state="initial">
+        <source>odefinierat</source>
+        <target>odefinierat</target>
       </segment>
     </unit>
     <unit id="Legend.Legend">

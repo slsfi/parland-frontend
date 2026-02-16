@@ -52,7 +52,7 @@ export class CollectionContentService {
 
   getManuscripts(textKey: TextKey, msId?: number | string): Observable<Manuscript[]> {
     const chId = textKey.chapterID ? `/${textKey.chapterID}` : '';
-    msId = msId ? `/${msId}` : '';
+    msId = msId ? `/${msId}` : (chId ? '' : '/');
     const endpoint = `${this.apiURL}/text/${textKey.collectionID}/${textKey.publicationID}/ms${msId}${chId}`;
 
     return this.http.get<ManuscriptsApiResponse>(endpoint).pipe(
@@ -69,7 +69,7 @@ export class CollectionContentService {
   }
 
   getVariants(textKey: TextKey): Observable<Variant[]> {
-    const chId = textKey.chapterID ? `/${textKey.chapterID}` : '';
+    const chId = textKey.chapterID ? `/${textKey.chapterID}` : '/';
     const endpoint = `${this.apiURL}/text/${textKey.collectionID}/${textKey.publicationID}/var${chId}`;
 
     return this.http.get<VariantsApiResponse>(endpoint).pipe(

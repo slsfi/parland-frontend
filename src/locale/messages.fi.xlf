@@ -522,6 +522,12 @@
         <target>Piilota rajaukset</target>
       </segment>
     </unit>
+    <unit id="ElasticSearch.Language">
+      <segment state="initial">
+        <source>Språk</source>
+        <target>Kieli</target>
+      </segment>
+    </unit>
     <unit id="ElasticSearch.LetterReceiverLocation">
       <segment state="initial">
         <source>Mottagarort (brev)</source>
@@ -904,6 +910,12 @@
       <segment state="initial">
         <source>Personkategorier</source>
         <target>Henkilökategoriat</target>
+      </segment>
+    </unit>
+    <unit id="Language.Undefined">
+      <segment state="initial">
+        <source>odefinierat</source>
+        <target>Määrittämätön</target>
       </segment>
     </unit>
     <unit id="Legend.Legend">

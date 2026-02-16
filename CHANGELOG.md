@@ -8,6 +8,192 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+### Changed
+
+- Update to base version [`2.4.6`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.4.6) from upstream, original repository.
+
+
+
+## [2.4.6] – 2026-02-13
+
+### Changed
+
+- Update `nginx` to 1.28.2. ([3115154](https://github.com/slsfi/digital-edition-frontend-ng/commit/311515499f23f66474373759700974b8055c8849))
+
+
+
+## [2.4.5] – 2026-02-13
+
+### Changed
+
+- Update GitHub Actions in the Docker build-and-push workflow. ([5ca772c](https://github.com/slsfi/digital-edition-frontend-ng/commit/5ca772c73375e2f5c536c83a4a825ca4ce61b019))
+- Harden Docker build and refresh docs. ([a37575c](https://github.com/slsfi/digital-edition-frontend-ng/commit/a37575c7be1b1df29e7e2f0982ca9bf764d5d8b0))
+- Update README. ([5a714d2](https://github.com/slsfi/digital-edition-frontend-ng/commit/5a714d2ecaad5650ce56125e9a91ca475804f3c5))
+- Deps: update `marked` to 17.0.2. ([fefe9c7](https://github.com/slsfi/digital-edition-frontend-ng/commit/fefe9c786e9cdcc85146bb9a58c39234abddb58b))
+- Deps (dev): update `@types/node` to 22.19.11. ([1e8f8a4](https://github.com/slsfi/digital-edition-frontend-ng/commit/1e8f8a44f8a6eec1504ad3e3c0dd44fc3cdc53f4))
+- Deps: update transitive dependencies. ([b82405e](https://github.com/slsfi/digital-edition-frontend-ng/commit/b82405e0f3278d561c6d7cf3d8ab8efb4de50102))
+
+
+
+## [2.4.4] – 2026-02-10
+
+### Changed
+
+- Migrate content-grid, occurrences-accordion, pdf-viewer, and text-changer components to zoneless-ready. ([6794f33](https://github.com/slsfi/digital-edition-frontend-ng/commit/6794f33e65f0a6c1f3e3a501953e30ad0f972ac9), [89fb737](https://github.com/slsfi/digital-edition-frontend-ng/commit/89fb737b3895d7193b22df6e83d4e357f79d5a40), [bf5351f](https://github.com/slsfi/digital-edition-frontend-ng/commit/bf5351f8ee24c1f352bb36458cd61ab6a65279ca), [bf2d3a0](https://github.com/slsfi/digital-edition-frontend-ng/commit/bf2d3a0a39f6b9681f9c2618dc33176aef556ae1))
+- Migrate download-texts and fullscreen-image-viewer modals to zoneless-ready. ([17dec08](https://github.com/slsfi/digital-edition-frontend-ng/commit/17dec08c82dc7b54f0fa51ea568a9eae353d2c61), [45521de](https://github.com/slsfi/digital-edition-frontend-ng/commit/45521de7cdb8d33296d50e5bec76f1931a408995))
+- Migrate decorator query fields to signals. ([786b0be](https://github.com/slsfi/digital-edition-frontend-ng/commit/786b0be704d62d0c5a57103222aa85ed9b1be7fb))
+- Replace `HostListener` decorators with the `host` property on `Component` decorator. ([54e5d8e](https://github.com/slsfi/digital-edition-frontend-ng/commit/54e5d8ef28be0678b52bd5b3a3cc0a339f1aa759))
+- Defer loading content-grid on home page to the browser. ([aca23d9](https://github.com/slsfi/digital-edition-frontend-ng/commit/aca23d9f9ac5c3bab04859791ff7efc19a748bdf))
+- Deps: update `@angular/cli` to 20.3.16. ([1da60d7](https://github.com/slsfi/digital-edition-frontend-ng/commit/1da60d7a2ef0b1a72b9e6464fac46b592f7aa586), [7f59010](https://github.com/slsfi/digital-edition-frontend-ng/commit/7f59010047be7f4a03e4e6c5ec668e4fbc34ea78))
+- Deps: update `htmlparser2` to 10.1.0. ([04d2a73](https://github.com/slsfi/digital-edition-frontend-ng/commit/04d2a732871f59db52de92341808dda5b74003ca))
+- Deps (dev): update `@types/node` to 22.19.10. ([d08a223](https://github.com/slsfi/digital-edition-frontend-ng/commit/d08a2234b82d8e3b6c37c0db5beebe573896f8ee), [10d46f9](https://github.com/slsfi/digital-edition-frontend-ng/commit/10d46f99d0ae99a6f12d4a9200001cf480e7f5ad))
+- Deps (dev): update `karma-jasmine-html-reporter` to 2.2.0. ([8156fb9](https://github.com/slsfi/digital-edition-frontend-ng/commit/8156fb95bcfb8da2c4ccc5ee06d2b1ffde421b7d))
+- Deps: update transitive dependencies. ([4f35d4d](https://github.com/slsfi/digital-edition-frontend-ng/commit/4f35d4d4b24bcc19321547047885230aaf21258d), [bbe30f1](https://github.com/slsfi/digital-edition-frontend-ng/commit/bbe30f166c945a673e5a15ca211913535db55b44))
+
+### Fixed
+
+- Treat input variables as readonly in fullscreen image viewer modal. ([5b759a9](https://github.com/slsfi/digital-edition-frontend-ng/commit/5b759a97be0c5e3c69524479b4ab1b78ba71c21e))
+
+
+
+## [2.4.3] – 2026-01-14
+
+### Changed
+
+- Deps: update `@angular/cli` to 20.3.14 and `@angular/core` to 20.3.16. ([a16e200](https://github.com/slsfi/digital-edition-frontend-ng/commit/a16e20059d46ea3f13d9731616f23ffd15f8bcbb))
+- Deps (dev): update `@types/jasmine` to 5.1.15. ([0b64e97](https://github.com/slsfi/digital-edition-frontend-ng/commit/0b64e97b0b1ae9e0c023271812df289f4c1a53cb))
+- Deps (dev): update `@types/node` to 22.19.6. ([b223ba7](https://github.com/slsfi/digital-edition-frontend-ng/commit/b223ba7b18b5df85160478c0dfcb99160c44ff65))
+- Deps: update transitive dependencies. ([4891127](https://github.com/slsfi/digital-edition-frontend-ng/commit/48911278894ab311a61040abe67d345311c7d67f))
+
+
+
+## [2.4.2] – 2025-12-18
+
+### Changed
+
+- Deps: update `@angular/cli` to 20.3.13. ([5fa4eb0](https://github.com/slsfi/digital-edition-frontend-ng/commit/5fa4eb0759a2b71922020143b3ff42947ff7627b))
+- Deps (dev): update `@types/node` to 22.19.3. ([6ddc09c](https://github.com/slsfi/digital-edition-frontend-ng/commit/6ddc09c665a4040862c8ac1b092d83e56406842a))
+- Deps: update transitive dependencies. ([9f38091](https://github.com/slsfi/digital-edition-frontend-ng/commit/9f38091d50a5284d0bc91d5dca18ae0efc9b8f55))
+
+
+
+## [2.4.1] – 2025-12-02
+
+### Changed
+
+- Deps: update `express` to 5.2.1. ([f78059c](https://github.com/slsfi/digital-edition-frontend-ng/commit/f78059cf66e0d36256f8986e2f945b0883c3410f))
+- Deps (dev): update `@types/express` to 5.0.6. ([211e261](https://github.com/slsfi/digital-edition-frontend-ng/commit/211e2611816140114430cfdb22d3356f02a1631b))
+- Deps (dev): update `jasmine-core` to 5.13.0. ([f78059c](https://github.com/slsfi/digital-edition-frontend-ng/commit/f78059cf66e0d36256f8986e2f945b0883c3410f))
+
+
+
+## [2.4.0] – 2025-12-01
+
+### Added
+
+- Support `language` property of collection menu items. ([bbde939](https://github.com/slsfi/digital-edition-frontend-ng/commit/bbde93903dce09b3264ed345a2a88b07fcfb5fb4))
+
+### Changed
+
+- Deps: update `@angular/cli` to 20.3.12 and `@angular/core` to 20.3.15. ([7ac3136](https://github.com/slsfi/digital-edition-frontend-ng/commit/7ac313673d8f9fa2e9bf08e333afb81b6948b41e), [0c6fc7d](https://github.com/slsfi/digital-edition-frontend-ng/commit/0c6fc7d96b6d8b597d1516c59c4dae2540fa1b5d))
+- Deps: update transitive dependencies. ([4fb05a8](https://github.com/slsfi/digital-edition-frontend-ng/commit/4fb05a831c431514fbd6a72f16a7c90e25a816c3))
+
+### Fixed
+
+- Generate sitemap prebuild-script: only include articles in default locale. ([bff9a2c](https://github.com/slsfi/digital-edition-frontend-ng/commit/bff9a2c78df1c1ab13fbd4eddaea5d3ad5ce8a99))
+- Canonical and alternate page URLs for articles when multiple site languages. ([58a1230](https://github.com/slsfi/digital-edition-frontend-ng/commit/58a12306db67cf8d0f50b824e781825bf81d365b))
+- Scroll to top button alignment on index page. ([d2af880](https://github.com/slsfi/digital-edition-frontend-ng/commit/d2af880d646180f710fe4e59fbf652ebe3070ff9))
+- Introduction title in download texts modal when a collection has a custom introduction title. ([a583686](https://github.com/slsfi/digital-edition-frontend-ng/commit/a583686ac68457686f3f046bed37b0f020ad7128))
+
+
+
+## [2.3.2] – 2025-11-22
+
+### Changed
+
+- Deps: update `marked` to 17.0.1. ([bd637c9](https://github.com/slsfi/digital-edition-frontend-ng/commit/bd637c9ba05433106c6126c5491259db86b1ffe3))
+- Deps: update `marked-custom-heading-id` to 2.0.16. ([cff78c2](https://github.com/slsfi/digital-edition-frontend-ng/commit/cff78c2e60e78dbda4d0967f9c7530db9a7564cd))
+- Refactor mobile mode check on introduction page. ([119842f](https://github.com/slsfi/digital-edition-frontend-ng/commit/119842f036d0e6b00e50590c81885aa7502c85cf))
+
+### Fixed
+
+- Deselecting active non-string filters in Elastic search. ([a521397](https://github.com/slsfi/digital-edition-frontend-ng/commit/a52139760270709617902cc93acb8445bfb15347))
+- Year filtering in Elastic search with strict `yyyy-MM-dd` formatted `orig_date_sort` date field. Migrate the date-histogram component to zoneless-ready. ([77248e3](https://github.com/slsfi/digital-edition-frontend-ng/commit/77248e3058b72412cde7f7ea4c44e5e38d870b86))
+- Case in `Language.Undefined` translation. ([d1c15b6](https://github.com/slsfi/digital-edition-frontend-ng/commit/d1c15b631acaf16be11dc8ab4175872e0c0f491f))
+- Initially hide article page table of contents in mobile mode. ([2bec1ea](https://github.com/slsfi/digital-edition-frontend-ng/commit/2bec1eac3ea42c1862954b5e034101d094e7ae91))
+
+
+## [2.3.1] – 2025-11-20
+
+### Changed
+
+- Deps: update `@angular/cli` to 20.3.11 and `@angular/core` to 20.3.13. ([9755ca8](https://github.com/slsfi/digital-edition-frontend-ng/commit/9755ca8bf8e33032820f757fb22a41c6eeb45297))
+
+### Fixed
+
+- Handle undefined language code in language name pipe. ([6b57fb4](https://github.com/slsfi/digital-edition-frontend-ng/commit/6b57fb40349d7c2c9402de8cc3c2b6f92653cc76))
+
+
+
+## [2.3.0] – 2025-11-17
+
+### Added
+
+- Support for filtering Elastic search results by language. Activate by adding `Language` to aggregations in the `elasticSearch` part of the config. If the Elastic search term field contains a valid language code, it is displayed as the language name in the active locale language. Config example: ([36013d4](https://github.com/slsfi/digital-edition-frontend-ng/commit/36013d4136ed695258585cfacb258c58be4d41a9))
+
+```typescript
+Language: {
+  terms: {
+    field: "text_language",
+    size: 20
+  }
+}
+```
+
+- Support for filtering Elastic search results by collection ID. Activate by adding `CollectionId` to aggregations in the `elasticSearch` part of the config. The title of the collection, not the ID, is displayed as the filter option name. If `multilingualCollectionTableOfContents` is set to true in the config, the collection name is displayed in the active locale language. Use this filter option instead of the collection title based `Collection` if your site has multiple locales, and the collection titles should be displayed with translated titles in the search. Config example: ([a984722](https://github.com/slsfi/digital-edition-frontend-ng/commit/a984722b50da59d2bf24fcd8bfc1b5c4a785377d))
+
+```typescript
+CollectionId: {
+  terms: {
+    field: "collection_id",
+    size: 20
+  }
+}
+```
+
+### Changed
+
+- Deps: update `@angular/cli` to 20.3.10 and `@angular/core` to 20.3.12. ([3ebcdea](https://github.com/slsfi/digital-edition-frontend-ng/commit/3ebcdeae9703a7f2dc85a09947e455fe86cb37b8))
+- Deps (dev): update `@types/jasmine` to 5.1.13. ([809bfe5](https://github.com/slsfi/digital-edition-frontend-ng/commit/809bfe5861c83b7fd0c33adaff6f8ccc447e6b94))
+- Deps (dev): update `@types/node` to 22.19.1. ([af22375](https://github.com/slsfi/digital-edition-frontend-ng/commit/af223750a7d9eee88a67d27ab2838706fddb5ced))
+- Deps: update transitive dependencies. ([0a16a07](https://github.com/slsfi/digital-edition-frontend-ng/commit/0a16a072d15689a1cd113189b5712b97f1ffc5b7))
+
+### Fixed
+
+- Show only active locale articles in content grid. ([f4db839](https://github.com/slsfi/digital-edition-frontend-ng/commit/f4db8399eca124e2eaae2e6ead5cc2e6dd68deb3))
+- English translations for letter sender / addressee terms. ([9909bed](https://github.com/slsfi/digital-edition-frontend-ng/commit/9909bed1f79b34920fdbc96457e8925ea3e82320))
+- English translations for citing. ([730c6a8](https://github.com/slsfi/digital-edition-frontend-ng/commit/730c6a8cc18045122b09a55c9bf0234ca655f40a))
+- Missing trailing slash in URL for getting variants. ([9e9cdec](https://github.com/slsfi/digital-edition-frontend-ng/commit/9e9cdec6552793db424be843620c7b8a211c91a2))
+
+
+
+## [2.2.2] – 2025-11-11
+
+### Changed
+
+- Migrate static-html component to zoneless-ready. ([57c9a41](https://github.com/slsfi/digital-edition-frontend-ng/commit/57c9a41779e9caea498156b128ca7b231538d964))
+- Deps: update `@angular/cli` to 20.3.9 and `@angular/core` to 20.3.10. ([a16c184](https://github.com/slsfi/digital-edition-frontend-ng/commit/a16c1845d2f2e8068708e0b709f70387570e16ba))
+- Deps: update `marked` to 16.4.2. ([044fd43](https://github.com/slsfi/digital-edition-frontend-ng/commit/044fd4340c0d6076fdfd70798a9ec4959568dc68))
+- Deps (dev): update `@types/node` to 22.19.0. ([71fd3a2](https://github.com/slsfi/digital-edition-frontend-ng/commit/71fd3a2c60b8158c921a6d3d50da0b8536e77381))
+
+### Fixed
+
+- Missing trailing slash in URL for getting manuscripts. ([7e5ccfc](https://github.com/slsfi/digital-edition-frontend-ng/commit/7e5ccfcdfab599abb2ff5bc4ba06dd46272406ca))
+
+### Removed
+
+- `extra_hosts` from `compose.yml`. ([4c56eca](https://github.com/slsfi/digital-edition-frontend-ng/commit/4c56eca8f7247a3c465a1ac6f898751c4f009034))
+
 
 
 ## [2.2.1-granska.3] – 2026-02-06
@@ -39,45 +225,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 
 
-## [2.1.1-granska.4] – 2025-09-03
-
-### Changed
-
-- Backend API to granska-parland-api.sls.fi. ([e80c3fa](https://github.com/slsfi/parland-frontend/commit/e80c3fa5c2bda370c961fc62fa22dfd85079a49a), [d196dab](https://github.com/slsfi/parland-frontend/commit/d196dabafd4d71080f2a5e03d926a939948028a4))
-
-
-
-## [2.1.1-granska.3] – 2025-08-25
-
-### Changed
-
-- Add testa-parland-api.sls.fi to extra hosts in compose file. ([17e13ad](https://github.com/slsfi/parland-frontend/commit/17e13ad7ccdb59e65c5f105d1cd31f6523449705))
-
-
-
-## [2.1.1-granska.2] – 2025-08-21
-
-### Changed
-
-- Update custom CSS. ([3212f9c](https://github.com/slsfi/parland-frontend/commit/3212f9ca870a00ed1e615eb6ce92c15308e30c11). [b2fb310](https://github.com/slsfi/parland-frontend/commit/b2fb310bb7dc5284e9af0fdadcbb7d88ff04bdf4))
-- Update config. ([49fea6f](https://github.com/slsfi/parland-frontend/commit/49fea6ffe2565c45632269d7af72cb3100a93ec1))
-
-
-
-## [2.1.1-granska.1] – 2025-08-18
-
-### Added
-
-- Collection page images. ([8688dbe](https://github.com/slsfi/parland-frontend/commit/8688dbece479ddf9925b2703d89416b59b22fcc9))
-
-### Changed
-
-- Update to base version [`2.1.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.1.1) from upstream, original repository. ([b16ca2b](https://github.com/slsfi/parland-frontend/commit/b16ca2bd7d3f24c37dd2ac95bf89568dc71df6ca))
-- Enable inline images for ’Prosa’ and ’Kritik’. ([81383c5](https://github.com/slsfi/parland-frontend/commit/81383c51e962ce20e2d4fcd959fdd8c287e0e784))
-- Disable sitemap and static collection menus generating prebuild scripts. ([163ce39](https://github.com/slsfi/parland-frontend/commit/163ce3950346455aef90af2eaabce598b7697079))
-
-
-
 ## [2.2.1] – 2025-10-31
 
 ### Added
@@ -86,7 +233,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ### Changed
 
-- Deps: update `angular/cli` to 20.3.8 and `angular/core` to 20.3.9. ([95a31f5](https://github.com/slsfi/digital-edition-frontend-ng/commit/95a31f5e2eb98b3bd54a82e36cdd8a40335c00be))
+- Deps: update `@angular/cli` to 20.3.8 and `@angular/core` to 20.3.9. ([95a31f5](https://github.com/slsfi/digital-edition-frontend-ng/commit/95a31f5e2eb98b3bd54a82e36cdd8a40335c00be))
 - Deps: update `marked` to 16.4.1. ([478a9db](https://github.com/slsfi/digital-edition-frontend-ng/commit/478a9db8dfbd0e4db418736a5a0fbe4f44955512))
 - Deps (dev): update `@types/express` to 5.0.5. ([a560e6f](https://github.com/slsfi/digital-edition-frontend-ng/commit/a560e6f3fd27c30a1b42002936259f84233eb37c))
 - Deps (dev): update `@types/jasmine` to 5.1.12. ([2b0d499](https://github.com/slsfi/digital-edition-frontend-ng/commit/2b0d499f645f2e6be0570a877e8a571b15374598))
@@ -138,6 +285,45 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 - Consistent naming of files containing models. ([fbf190d](https://github.com/slsfi/digital-edition-frontend-ng/commit/fbf190d4c3563852911a199d458ae90ca5e21697))
 - Gallery item model mapping. ([b9943b5](https://github.com/slsfi/digital-edition-frontend-ng/commit/b9943b56650992bbe75d58e272c37162eca7d6e8))
 - Accessible labels for text changer links in mobile mode. ([2aa99ef](https://github.com/slsfi/digital-edition-frontend-ng/commit/2aa99ef6f3361fc3c8ef66496964fa9562b8a28e))
+
+
+
+## [2.1.1-granska.4] – 2025-09-03
+
+### Changed
+
+- Backend API to granska-parland-api.sls.fi. ([e80c3fa](https://github.com/slsfi/parland-frontend/commit/e80c3fa5c2bda370c961fc62fa22dfd85079a49a), [d196dab](https://github.com/slsfi/parland-frontend/commit/d196dabafd4d71080f2a5e03d926a939948028a4))
+
+
+
+## [2.1.1-granska.3] – 2025-08-25
+
+### Changed
+
+- Add testa-parland-api.sls.fi to extra hosts in compose file. ([17e13ad](https://github.com/slsfi/parland-frontend/commit/17e13ad7ccdb59e65c5f105d1cd31f6523449705))
+
+
+
+## [2.1.1-granska.2] – 2025-08-21
+
+### Changed
+
+- Update custom CSS. ([3212f9c](https://github.com/slsfi/parland-frontend/commit/3212f9ca870a00ed1e615eb6ce92c15308e30c11). [b2fb310](https://github.com/slsfi/parland-frontend/commit/b2fb310bb7dc5284e9af0fdadcbb7d88ff04bdf4))
+- Update config. ([49fea6f](https://github.com/slsfi/parland-frontend/commit/49fea6ffe2565c45632269d7af72cb3100a93ec1))
+
+
+
+## [2.1.1-granska.1] – 2025-08-18
+
+### Added
+
+- Collection page images. ([8688dbe](https://github.com/slsfi/parland-frontend/commit/8688dbece479ddf9925b2703d89416b59b22fcc9))
+
+### Changed
+
+- Update to base version [`2.1.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.1.1) from upstream, original repository. ([b16ca2b](https://github.com/slsfi/parland-frontend/commit/b16ca2bd7d3f24c37dd2ac95bf89568dc71df6ca))
+- Enable inline images for ’Prosa’ and ’Kritik’. ([81383c5](https://github.com/slsfi/parland-frontend/commit/81383c51e962ce20e2d4fcd959fdd8c287e0e784))
+- Disable sitemap and static collection menus generating prebuild scripts. ([163ce39](https://github.com/slsfi/parland-frontend/commit/163ce3950346455aef90af2eaabce598b7697079))
 
 
 
@@ -1157,7 +1343,18 @@ siteLogoDimensions: {
 
 
 
-[unreleased]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.2.1...HEAD
+[unreleased]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.4.6...HEAD
+[2.4.6]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.4.5...2.4.6
+[2.4.5]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.4.4...2.4.5
+[2.4.4]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.4.3...2.4.4
+[2.4.3]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.4.2...2.4.3
+[2.4.2]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.4.1...2.4.2
+[2.4.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.4.0...2.4.1
+[2.4.0]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.3.2...2.4.0
+[2.3.2]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.3.1...2.3.2
+[2.3.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.3.0...2.3.1
+[2.3.0]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.2.2...2.3.0
+[2.2.2]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.2.1...2.2.2
 [2.2.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.2.0...2.2.1
 [2.2.0]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.1.1...2.2.0
 [2.1.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.1.0...2.1.1
