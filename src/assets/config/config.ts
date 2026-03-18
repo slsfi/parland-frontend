@@ -17,6 +17,10 @@ export const config: Config = {
       multilingualNamedEntityData: false
     },
     enableRouterLoadingBar: true,
+    auth: {
+      enabled: false,
+      backendAuthBaseURL: "https://api.sls.fi/"
+    },
     openGraphMetaTags: {
       enabled: true,
       image: {
@@ -28,9 +32,11 @@ export const config: Config = {
     },
     prebuild: {
       sitemap: false,
-      staticCollectionMenus: false
+      staticCollectionMenus: false,
+      featureBasedRoutes: false
     },
     ssr: {
+      trustProxyHops: 2,
       collectionSideMenu: false
     }
   },
@@ -268,7 +274,11 @@ export const config: Config = {
         indexPersons: false,
         indexPlaces: false,
         indexWorks: false,
-        search: true
+        search: true,
+        cookiePolicy: false,
+        termsOfUse: false,
+        privacyPolicy: false,
+        accessibilityStatement: false,
       },
       defaultExpanded: true,
       ungroupArticles: true
