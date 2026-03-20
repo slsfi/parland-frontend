@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 - Update to base version [`2.6.2`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.6.2) from upstream, original repository.
 
+### Fixed
+
+- Badge URLs in `README.md`.
+
 
 
 ## [2.6.2] – 2026-03-20
