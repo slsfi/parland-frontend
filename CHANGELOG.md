@@ -8,18 +8,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+
+
+## [2.6.2-granska.1] – 2026-03-20
+
 ### Changed
 
-- Update to base version [`2.6.2`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.6.2) from upstream, original repository.
-- Enable feature based routes and separate cookie policy page in config.
+- Update to base version [`2.6.2`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.6.2) from upstream, original repository. ([a9cf2ed](https://github.com/slsfi/parland-frontend/commit/a9cf2ed883974104ff63712b77d13451c0118e6a))
+- Enable feature based routes and separate cookie policy page in config. ([63d8ecd](https://github.com/slsfi/parland-frontend/commit/63d8ecd558d2f69b94390f7171a010d06a2b5196))
 
 ### Fixed
 
-- Badge URLs in `README.md`.
+- Badge URLs in `README.md`. ([2b85ff4](https://github.com/slsfi/parland-frontend/commit/2b85ff4db8c1484f64e85e31a5969526d74b3223))
 
 ### Removed
 
-- Cookie banner CSS from `custom.scss`.
+- Cookie banner CSS from `custom.scss`. ([60b267e](https://github.com/slsfi/parland-frontend/commit/60b267e83ea467962917ab02e070392b232515ae))
 
 
 
@@ -1535,6 +1539,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[2.6.2-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.4.6-granska.1...2.6.2-granska.1
 [2.4.6-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.2.1-granska.3...2.4.6-granska.1
 [2.2.1-granska.3]: https://github.com/slsfi/parland-frontend/compare/2.2.1-granska.2...2.2.1-granska.3
 [2.2.1-granska.2]: https://github.com/slsfi/parland-frontend/compare/2.2.1-granska.1...2.2.1-granska.2
