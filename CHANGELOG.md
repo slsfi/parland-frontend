@@ -8,6 +8,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+### Changed
+
+- Update to base version [`2.6.4`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/2.6.4) from upstream, original repository.
+
+
+
+## [2.6.4] – 2026-04-17
+
+### Changed
+
+- Update `nginx` to 1.30.0 and remove unnecessary WebSocket-oriented proxy directives from `nginx.conf`. ([70a80af](https://github.com/slsfi/digital-edition-frontend-ng/commit/70a80af61684ceca4992c9644227d1f7c06779b6))
+- Deps: update `@angular/core` to 20.3.19 and `@angular/cli` to 20.3.24. ([4348243](https://github.com/slsfi/digital-edition-frontend-ng/commit/4348243b9ebc07654bb055dc35bcc46915b98584))
+- Deps: update `express-rate-limit` to 8.3.2. ([eaf5ef5](https://github.com/slsfi/digital-edition-frontend-ng/commit/eaf5ef5af354bcfc30710d5a204539dfa3a2c7d8))
+- Deps: update `marked` to 18.0.1. ([1d84cec](https://github.com/slsfi/digital-edition-frontend-ng/commit/1d84cec3ce2e29dec2981bd9bd6bc57b7e915208))
+- Deps: update `marked-custom-heading-id` to 2.0.17. ([f6ea1c3](https://github.com/slsfi/digital-edition-frontend-ng/commit/f6ea1c39877881140576bde7483e5bd797c3f3bc))
+- Deps (dev): update `@types/node` to 22.19.17. ([a169ea4](https://github.com/slsfi/digital-edition-frontend-ng/commit/a169ea469d11b47776e4be47016953fb624b4e81))
+- Deps: update transitive dependencies. ([b0c9365](https://github.com/slsfi/digital-edition-frontend-ng/commit/b0c9365a9438760d6817624dfa922a069d1f4df2))
+
+### Fixed
+
+- Missing and incorrect translations. ([ac75aa9](https://github.com/slsfi/digital-edition-frontend-ng/commit/ac75aa9539f919c382fe1d1ef13566283c825fa1))
+
+
+
+## [2.6.3] – 2026-03-30
+
+### Changed
+
+- Update `nginx` to 1.28.3. ([388e100](https://github.com/slsfi/digital-edition-frontend-ng/commit/388e100d9440b567b56950ab22bf8b5725b18ab1))
+- Deps: update `@angular/cli` to 20.3.22. ([081b15b](https://github.com/slsfi/digital-edition-frontend-ng/commit/081b15bafbc1992351a4acdd57ad4574bdf8221d))
+- Deps: update `htmlparser2` to 12.0.0. ([4c93476](https://github.com/slsfi/digital-edition-frontend-ng/commit/4c93476b2c3a03a0856b36151243e941e80c93ed))
+- Deps: update `marked` to 17.0.5. ([6ad7e40](https://github.com/slsfi/digital-edition-frontend-ng/commit/6ad7e40e0dee0f3d67bf5b818cd7642f9474fbcc))
+- Deps: update transitive dependencies. ([02add5b](https://github.com/slsfi/digital-edition-frontend-ng/commit/02add5bc968433772092f787b6ed2d0258817db1))
+
 
 
 ## [2.6.2-granska.1] – 2026-03-20
@@ -1477,7 +1511,9 @@ siteLogoDimensions: {
 
 
 
-[unreleased]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.6.2...HEAD
+[unreleased]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.6.4...HEAD
+[2.6.4]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.6.3...2.6.4
+[2.6.3]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.6.2...2.6.3
 [2.6.2]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.6.1...2.6.2
 [2.6.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.6.0...2.6.1
 [2.6.0]: https://github.com/slsfi/digital-edition-frontend-ng/compare/2.5.1...2.6.0
