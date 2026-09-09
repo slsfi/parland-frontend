@@ -8,10 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## Unreleased
 
+
+
+## [3.0.1-granska.1] – 2026-09-09
+
 ### Changed
 
-- Update to base version [`3.0.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/3.0.1) from upstream, original repository.
-- Align `custom.scss` with v3.0.0 changes.
+- Update to base version [`3.0.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/3.0.1) from upstream, original repository. ([ab8bc70](https://github.com/slsfi/parland-frontend/commit/ab8bc7074a14e8ff460f7b0847d74cc6bb8bf86f))
+- Align `custom.scss` with v3.0.0 changes. ([1a08cb9](https://github.com/slsfi/parland-frontend/commit/1a08cb9f872128b144feb6174bc7d487fd3a7b86))
 
 
 
@@ -1850,6 +1854,7 @@ siteLogoDimensions: {
 [1.0.1]: https://github.com/slsfi/digital-edition-frontend-ng/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/v1.0.0
 
+[3.0.1-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.7.9-granska.1...3.0.1-granska.1
 [2.7.9-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.7.5-granska.1...2.7.9-granska.1
 [2.7.5-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.7.0-granska.1...2.7.5-granska.1
 [2.7.0-granska.1]: https://github.com/slsfi/parland-frontend/compare/2.6.4-granska.1...2.7.0-granska.1
