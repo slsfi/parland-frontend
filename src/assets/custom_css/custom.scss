@@ -308,24 +308,10 @@ top-menu {
 
 /* Home page */
 page-home {
-  .portrait-mode {
-    .banner {
-      background-color: #d0d6e4;
-    }
-    .title-wrapper {
-      .site-subtitle.site-subtitle {
-        font-size: 1.5rem;
-        font-style: normal;
-      }
-    }
-    .text-content.text-content.text-content {
-      max-width: 750px;
-
-      .footer.footer.footer.footer {
-        text-align: center;
-      }
-    }
-  }
+  --portrait-banner-background-color: #d0d6e4;
+  --portrait-site-subtitle-font-size: 1.5rem;
+  --portrait-site-subtitle-font-style: normal;
+  --portrait-site-title-text-align: start;
 }
 
 .markdown {
