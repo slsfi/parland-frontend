@@ -53,6 +53,7 @@ export const config: Config = {
   ],
   collections: {
     addTEIClassNames: false,
+    useStaticCoverData: false,
     replaceImageAssetsPaths: false,
     enableLegacyIDs: true,
     enableMathJax: false,
