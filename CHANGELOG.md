@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 - Update to base version [`4.2.1`](https://github.com/slsfi/digital-edition-frontend-ng/releases/tag/4.2.1) from upstream, original repository.
 
+### Fixed
+
+- Article page: Markdown h1 styling.
+
 
 
 ## [4.2.1] – 2026-11-20
